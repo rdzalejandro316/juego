@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body class="cuerpo" onkeydown="una(event)">
+	<img id="scream" width="40" height="40" src="imagenes/rocket.svg" alt="The Scream">
+
+	<div class="contenedor">
+
+		<div class="precionT" id="precionT">
+			<div id="inicio" class="inicio">
+				<div class="precione">presione la tecla shift para empezar a jugar</div>
+			</div>
+
+			<div class="instruciones">
+				<p class="tit">instruciones</p>
+				<p class="desc1">deberas atrapar un numero maximo de 10 pepas rojas
+				para poder ganar el juego pero tienes que ser agil por que el juego te da solo 20 segundos para que lo logres</p>
+				<br>
+				<p class="desc2">! ten cuidado con las paredes por que si las tocas
+				se reiniciara el juego ¡</p>
+			</div>
+
+			<div class="controles">
+				<div class="c">controles del juego</div>
+				<div class="arriba">↑</div>
+				<div class="izquierda">←</div>
+				<div class="abajo">↓</div>
+				<div class="derecha">→</div>
+			</div>
+		</div>
+
+		<canvas id="canvas" class="canvas"></canvas>
+	</div>
+
+	<div class="down">
+		<div class="puntaje">
+		<p class="pun">puntaje: </p><p id="puntos"> 0</p>
+		<br>
+		<p class="tiempo">tiempo: </p>
+		<p class="tiem" id="tiem">0</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="javascript/juego.js"></script>
+</html>
